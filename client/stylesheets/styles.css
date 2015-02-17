@@ -1,0 +1,33 @@
+#gamePlus {
+	background:orange;
+	color:white;
+	padding:0px 5px 3px 5px;
+	border-radius:50%;
+}
+.select2-container {
+	width:auto;
+}
+.buttons {
+	
+	background:orange;
+	color:white;
+	padding:5px;
+	border-radius:5%;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+	margin-top:10px;
+	display:inline-block;
+}
+a.buttons:hover {
+	color:white !important;
+}
+.addToPlayers {
+	margin-left:10px;
+	margin-top:10px;
+	float:right;
+}
+#words {
+	display:none;
+}
+.form-group label {
+	padding:0 0 10px 0;
+}

@@ -1,0 +1,12 @@
+<template name="games">
+  <div class="games">
+  	{{> subNav}}
+  	{{#if hasGames}}
+		{{#each games}}
+			{{> gameItems}}
+		{{/each}}
+	{{else}}
+		{{> noGames}}
+	{{/if}}
+  </div>
+</template>

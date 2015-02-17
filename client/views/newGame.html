@@ -1,0 +1,31 @@
+<template name="newGame">
+	<section id="players" class="col-md-8">
+		<div class="form-group">
+		
+			<label>Add a name for your game or <a href="#" id="generate" class="buttons">generate one</a></label>
+			<input type="text" placeholder="Add your game name" id="gameName" class="form-control" />
+		</div>
+		{{#if haveAddedName}}
+			{{> addName}}
+		{{/if}}
+		{{#if canGetWords}}
+			<p>
+			If you're happy you have added all playing members 
+			<a href="#" id="addWords" class="buttons">add your words</a>
+			</p>
+		{{/if}}
+	</section>
+	<section id="words" class="col-md-8">
+		<p>
+			<a href="#" id="backTP" class="buttons"> Back</a>
+		</p>
+		<p>
+			Please fill in all the inputs provided with your games buzzwords
+		</p>
+		{{#each amount}}
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="{{this}}"/>
+			</div>
+		{{/each}}
+	</section>
+</template>
