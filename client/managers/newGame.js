@@ -57,10 +57,6 @@ Template.newGame.events({
 	'click #generate':function(e){
 		e.preventDefault();
 		$.ajax({
-			accepts: {
-   				xml: 'text/xml',
-   				text: 'text/plain'
-    			},
 			url:'http://randomword.setgetgo.com/get.php',
 			dataType:'jsonp',
 			jsonp: 'callback',
